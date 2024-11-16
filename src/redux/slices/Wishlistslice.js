@@ -8,7 +8,7 @@ const wishlistslice=createSlice({
             state.push(actionFromView.payload)
         },
         removeItem:(state,actionFromWishlist)=>{
-            state.filter(item=>item.id!=actionFromWishlist.payload)
+           return state.filter(item=>item.id!=actionFromWishlist.payload)
         }
     }
 
