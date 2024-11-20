@@ -3,7 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const wishlistslice=createSlice({
     name:'wishlists',
     initialState:[],
-    reducers:{
+    reducers:{ //for defining action
+        //action-name:reducer function
         addToWishlist:(state,actionFromView)=>{
             state.push(actionFromView.payload)
         },
